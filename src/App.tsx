@@ -7,7 +7,7 @@ import { HomeScreen } from "./screens";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
