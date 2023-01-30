@@ -16,8 +16,10 @@ function HomeScreen() {
       <Section className="intro" id="home">
         <h1 className="section__title section__title--intro">
           {t("intro")}
-          <strong> {t("name")}</strong>
-          {t("intro-2")}
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <strong> {t("name")}</strong>
+            {t("intro-2")}
+          </div>
         </h1>
         <p className="section__subtitle section__subtitle--intro">
           Full-Stack Devloper
@@ -36,7 +38,7 @@ function HomeScreen() {
           ))}
         </div>
         <a href="#work" className="btn">
-          Take a look at My Work
+          {t()}
         </a>
       </Section>
       <Section className="about-me" id="about">
@@ -51,6 +53,11 @@ function HomeScreen() {
             <p>
               2021.04 ~ <strong>Software Engineer </strong>@ Dencomm
             </p>
+            <div style={{ fontSize: "0.9rem" }}>
+              <p>• {t("work-1")}</p>
+              <p>• {t("work-2")}</p>
+              <p>• {t("work-3")}</p>
+            </div>
             <br />
           </Paragraph>
           <Paragraph>

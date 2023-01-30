@@ -4,5 +4,9 @@
     "name":"Seyeon Huh",
     "education-1":"History, Bachelorof Arts, Dankook University, South Korea",
     "education-2":"East Asian Studies, Master of Social Science, University of Turku, Finland",
-    "course":"Full Stack developer course provided by Seoul City and Seoul Business Agency"
+    "course":"Full Stack developer course provided by Seoul City and Seoul Business Agency",
+    "work-1":"Developing voice activated dental charts",
+    "work-2":"Developing an annotation tool for collecting AI training data",
+    "work-3":"AI Model training for Speech Recognition engine",
+    "mv2prj":"Take a look at My Work"
 }
