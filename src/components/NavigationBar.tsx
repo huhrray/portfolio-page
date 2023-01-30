@@ -13,10 +13,10 @@ function NavigationBar() {
   const handleLanguage = () => {
     if (i18next.language === "en") {
       i18next.changeLanguage("kr");
-      setLanguage("Korean");
+      setLanguage("English");
     } else {
       i18next.changeLanguage("en");
-      setLanguage("English");
+      setLanguage("Korean");
     }
   };
 
