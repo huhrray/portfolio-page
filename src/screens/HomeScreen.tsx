@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import Section from "components/Section";
 import React from "react";
 import "../portfolio.css";
@@ -8,6 +9,7 @@ import Footer from "components/Footer";
 import { useTranslation } from "react-i18next";
 import huhImage from "../assets/images/huh.png";
 import seyeonImage from "../assets/images/seyeon.jpg";
+import dchart from "../assets/images/dchart.png";
 
 function HomeScreen() {
   const { t } = useTranslation();
@@ -38,7 +40,7 @@ function HomeScreen() {
           ))}
         </div>
         <a href="#work" className="btn">
-          {t()}
+          {t("mv2prj")}
         </a>
       </Section>
       <Section className="about-me" id="about">
@@ -83,7 +85,25 @@ function HomeScreen() {
         <p className="section__subtitle section__subtitle--mywork">
           A selection of my projects
         </p>
-
+        <div className="portfolio">
+          <a
+            href="https://www.youtube.com/watch?v=701RvS43OyQ"
+            className="portfolio__item"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={dchart} alt="dchart" className="portfolio__video" />
+          </a>
+        </div>
+        <div className="portfolio">
+          <video controls className="portfolio__video">
+            <source
+              // eslint-disable-next-line global-require
+              src={require("../assets/videos/myvoice.webm")}
+              type="video/webm"
+            />
+          </video>
+        </div>
         {/* <div className="portfolio">
           <a href="portfolio_item.html" className="portfolio__item">
             <img src="portfolio-01.jpg" alt="" className="portfolio__img" />

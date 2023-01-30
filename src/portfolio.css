@@ -398,7 +398,7 @@ header {
   overflow: hidden;
 }
 
-.portfolio__img {
+.portfolio__video {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opactiy 250ms linear;
 }
 
@@ -407,13 +407,13 @@ header {
   z-index: 2;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
+.portfolio__video:hover,
+.portfolio__item:focus .portfolio__video {
   transform: scale(1.2);
   opacity: 0.5;
 }
 
-.portfolio__img {
+.portfolio__video {
   width: 100%;
   height: 100%;
 }
