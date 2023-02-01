@@ -94,34 +94,25 @@ function HomeScreen() {
           >
             <img src={dchart} alt="dchart" className="portfolio__video" />
           </a>
+          <div className="portfolio__item">
+            <video controls className="portfolio__video">
+              <source
+                // eslint-disable-next-line global-require
+                src={require("../assets/videos/myvoice.webm")}
+                type="video/webm"
+              />
+            </video>
+          </div>
         </div>
-        <div className="portfolio">
-          <video controls className="portfolio__video">
-            <source
-              // eslint-disable-next-line global-require
-              src={require("../assets/videos/myvoice.webm")}
-              type="video/webm"
-            />
-          </video>
-        </div>
+        {/* <div className="portfolio">
+          <
+        </div> */}
         {/* <div className="portfolio">
           <a href="portfolio_item.html" className="portfolio__item">
             <img src="portfolio-01.jpg" alt="" className="portfolio__img" />
           </a>
           <a href="#" className="portfolio__item">
             <img src="portfolio-02.jpg" alt="" className="portfolio__img" />
-          </a>
-          <a href="#" className="portfolio__item">
-            <img src="portfolio-03.jpg" alt="" className="portfolio__img" />
-          </a>
-          <a href="#" className="portfolio__item">
-            <img src="portfolio-04.jpg" alt="" className="portfolio__img" />
-          </a>
-          <a href="#" className="portfolio__item">
-            <img src="portfolio-05.jpg" alt="" className="portfolio__img" />
-          </a>
-          <a href="#" className="portfolio__item">
-            <img src="portfolio-06.jpg" alt="" className="portfolio__img" />
           </a>
         </div> */}
       </Section>

@@ -396,6 +396,7 @@ header {
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  margin:10px;
 }
 
 .portfolio__video {
@@ -411,6 +412,7 @@ header {
 .portfolio__item:focus .portfolio__video {
   transform: scale(1.2);
   opacity: 0.5;
+  z-index: 10;
 }
 
 .portfolio__video {
